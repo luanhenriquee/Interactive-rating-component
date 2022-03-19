@@ -4,24 +4,22 @@ const buttonMenu = document.querySelectorAll('[data-value]')
 const textInfo = document.querySelector('.info')
 const cardThanks = document.querySelector('.c2')
 
-let value = 0;
+let value = 0
 
-function openCard() {
-  for (let card of cards) {
-    buttonSubmit.addEventListener('click', () => {
-      card.classList.toggle('show')
-    })
-  }
+function toggleShow() {
+  buttonSubmit.addEventListener('click', () => {
+    cards[0].classList.remove('show')
+    cards[1].classList.add('show')
+  })
 }
 
 buttonMenu.forEach((index, card) => {
   index.addEventListener('click', () => {
-    buttonMenu.forEach(index => index.classList.remove('active')) 
+    buttonMenu.forEach(index => index.classList.remove('active'))
     cardThanks.classList.add('transition')
     value = index.dataset.value
     index.classList.add('active')
-    openCard()
+    toggleShow()
     textInfo.innerHTML = `You selected ${value} out of 5`
-  }) 
+  })
 })
-
