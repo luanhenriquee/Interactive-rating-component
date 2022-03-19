@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+
+  <body>
+    <main class="section">
+      <div class="container show">
+        <div class="card grid">
+          <figure class="circle">
+            <img src="images/icon-star.svg" alt="Icon Star" />
+          </figure>
+          <div class="texts">
+            <h1>How did we do?</h1>
+            <br>
+            <p>
+              Please let us know how we did width your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+          </div>
+            <ul>
+              <li data-value="1" class="circle">1</li>
+              <li data-value="2" class="circle">2</li>
+              <li data-value="3" class="circle">3</li>
+              <li data-value="4" class="circle">4</li>
+              <li data-value="5" class="circle">5</li>
+            </ul>
+            <button type="submit" class="submit">Submit</button>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="card c2 grid">
+          <img src="images/illustration-thank-you.svg" alt="Ilustration thank you">
+          <div class="info">
+           
+          </div>
+          <div class="texts-c2">
+            <h1>Thank you!</h1>
+            <br>
+            <p>
+              We appreciate you taking the time to give a rating. If your ever need more support, dont't hesitate to get in touch!
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Desenvolvido por <a href="https://github.com/luanhenriquee">Luan Henrique</a></p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
